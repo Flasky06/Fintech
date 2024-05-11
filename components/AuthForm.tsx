@@ -17,13 +17,8 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
 import CustomInput from "./CustomInput";
 import { authFormSchema } from "@/lib/utils";
-
-const formSchema = z.object({
-  email: z.string().email(),
-});
 
 const AuthForm = ({ type }: { type: string }) => {
   const [user, setUser] = useState(null);
